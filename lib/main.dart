@@ -8,14 +8,18 @@ import 'page2.dart';
 void main() => runApp(const MyApp());
 // main() คือฟังก์ชันเริ่มต้นของแอป
 // runApp() ใช้รัน widget หลักของโปรเจค (MyApp)
-
+//void
+// ฟังก์ชันที่ทำงานอย่างเดียว ไม่ส่งค่า
 
 class MyApp extends StatelessWidget {
   // MyApp เป็น StatelessWidget แสดงข้อมูลที่ไม่เปลี่ยนแปลงระหว่างใช้งาน
+  //class MyApp คือคลาสหลักของแอป ที่บอก Flutter ว่าหน้าตาแอปควรเริ่มยังไง
   const MyApp({super.key});
-
+//สร้าง MyApp แบบคงที่ และส่ง key ให้พ่อมัน (StatelessWidget)
   @override
+  //สร้าง MyApp แบบคงที่ และส่ง key ให้พ่อมัน (StatelessWidget)
   Widget build(BuildContext context) {
+    //ฟังก์ชันที่สร้าง UI ทั้งหมดบนหน้าจอ
     return MaterialApp(
       title: 'Profile Demo', // ชื่อแอป
       debugShowCheckedModeBanner: false, // ซ่อนป้าย DEBUG มุมขวาบน
